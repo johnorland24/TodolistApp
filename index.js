@@ -16,6 +16,7 @@ function addTask() {
         doneButton.textContent = 'Done';
         doneButton.addEventListener('click', function() {
             newTask.style.backgroundColor = 'lightgreen';
+            
         });
 
         const deleteButton = document.createElement('button');
@@ -24,6 +25,7 @@ function addTask() {
             lastAction = 'delete';
             lastTask = newTask;
             newTask.style.display = 'none';
+            
         });
 
         lastAction = 'add';
@@ -48,7 +50,16 @@ function undo() {
     }
     lastAction = null;
     lastTask = null;
+    
 }
+// to save data on local storage
+// function saveData(){
+//     localStorage.setItem("data",listContainer.innerHTML);
+// }
+// function showTask(){
+//     listContainer.innerHTML = localStorage.getItem("data");
+// }
+// showTask();
 
 // Event listeners
 addButton.addEventListener('click', addTask);
