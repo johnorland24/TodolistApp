@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+   background: rgb(247, 246, 246);  
+}
+.to-dolist{
+    width: 100%;
+    max-width: 550px;
+    background-color: rgb(37, 45, 51);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+ h1{
+   justify-content: center;
+   display: flex;
+   color: azure;
+
+}
+ input{
+    flex: 1;
+    border: rgb(247, 242, 242) solid 4px;
+    padding: 10px;
+    font-weight: 15px;
+    outline: none;
+    background: transparent;
+
+}
+button{
+    border: none;
+    background: rgb(216, 225, 224);
+    padding:  10px;
+    width: 10%;
+    cursor: pointer;
+   outline: none;
+   border-radius:none;
+   
+}
+.list button{
+    display: inline-flex;
+    margin: 10px;
+    padding-right: 50px;
+}
+ul li{
+  list-style: none;
+  font-size: 20px;
+  padding: 15px 10px  12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  color: azure;
+
+}
+
+/* .list button{
+    display: inline-flex;
+    margin: 10px;
+    padding-right: 50px;
+}
+li.active,.done::before{
+    background-color: aquamarine;
+    margin: 20px;
+    color: black;
+}
+li.active,.delete::before{
+    background-color: aquamarine;
+    margin: 20px;
+    color: black;
+    /* display: none; */
+/* }
+li.active,.undo::before{
+    background-color: aquamarine;
+    margin: 20px;
+    color: black;
+    /* display: none; */
+/*} */ 
